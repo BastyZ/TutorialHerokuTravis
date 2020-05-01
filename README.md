@@ -107,13 +107,13 @@ Agregar `.travis.yml` en la raíz del proyecto con la siguiente información:
 ``` yaml
 language: python
 python:
-“3.7.5”
+    - “3.7.5”
 install:
-pip install -r requirements.txt
+    - pip3 install -r requirements.txt
 script:
-python manage.py makemigrations
-python manage.py migrate
-python manage.py test
+    - python3 manage.py makemigrations
+    - python3 manage.py migrate
+    - python3 manage.py test
 deploy:
     provider: heroku
         api_key:
