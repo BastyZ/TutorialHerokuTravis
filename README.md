@@ -115,12 +115,12 @@ python manage.py makemigrations
 python manage.py migrate
 python manage.py test
 deploy:
-     provider: heroku
-	api_key:
-                secure: <el resultado del comando: travis encrypt $(heroku auth:token)>
-           app: <Nombre de la App en Heroku>
-           on:
-	   repo: <Usuario de git>/<Nombre del repo>
+    provider: heroku
+        api_key:
+            secure: <el resultado del comando: travis encrypt $(heroku auth:token)>
+        app: <Nombre de la App en Heroku>
+        on:
+        repo: <Usuario de git>/<Nombre del repo>
 ```
 ### Paso 3
 Desde la interfaz web de heroku se debe realizar el link con el repositorio de github, esto se hace desde la pestaña de “Deploy”, indicando conexión github, indicando el nombre del repositorio.Una vez hecho esto, en github se se observa en “settings” -> ”webhooks” que el repositorio se ha enlazado a heroku.
