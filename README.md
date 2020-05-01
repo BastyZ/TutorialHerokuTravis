@@ -79,7 +79,7 @@ $ git push heroku master
 
 La aplicación ha sido desplegada, se asegura que al menos una instancia de la app está corriendo mediante
 ``` shell
-Heroku ps:scale web=1
+heroku ps:scale web=1
 ```
 
 Para visitar la aplicación una vez desplegada se puede utilizar el siguiente comando
@@ -92,7 +92,7 @@ heroku open
 ### Prerequisitos
 - Tener el repositorio en github
 - Tener credenciales de autor del repositorio
-- ruby 2.4.0 o superior
+- Ruby 2.4.0 o superior
 
 ### Paso 1
 Instalar Travis CLI desde https://github.com/travis-ci/travis.rb#installation
@@ -125,6 +125,7 @@ deploy:
 ### Paso 3
 Desde la interfaz web de heroku se debe realizar el link con el repositorio de github, esto se hace desde la pestaña de “Deploy”, indicando conexión github, indicando el nombre del repositorio.Una vez hecho esto, en github se se observa en “settings” -> ”webhooks” que el repositorio se ha enlazado a heroku.
 
-
-
-https://medium.com/@felipeluizsoares/automatically-deploy-with-travis-ci-and-heroku-ddba1361647f
+## Referencias
+- [Tutorial de Travis](https://docs.travis-ci.com/user/tutorial/)
+- [Tutorial de Heroku](https://devcenter.heroku.com/articles/getting-started-with-python)
+- [Coordinar Travis con Heroku](https://medium.com/@felipeluizsoares/automatically-deploy-with-travis-ci-and-heroku-ddba1361647f)
