@@ -72,7 +72,7 @@ heroku create
 ```
 Esto también creará un proceso “git remote” asociado al repositorio local
 
-Para hacer un despliegue del código se utiliza
+Para hacer un despliegue del código se utiliza (debe hacer un commit antes)
 ```shell
 $ git push heroku master
 ```
